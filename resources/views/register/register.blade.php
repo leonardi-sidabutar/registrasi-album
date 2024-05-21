@@ -182,7 +182,7 @@
             $('#regional').change(function() {
                 var regional = $(this).val();
                 $.ajax({
-                    url: 'http://localhost:8000/api/kebun',
+                    url: '<?=$base_url;?>/api/kebun',
                     method: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({ regional: regional }),

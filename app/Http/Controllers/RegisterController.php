@@ -11,7 +11,8 @@ class RegisterController extends Controller
 {
     public function index()
     {
-        return view('register.register');
+        $base_url = url('/');
+        return view('register.register',compact('base_url'));
     }
 
     public function registration(Request $request)
